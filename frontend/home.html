@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./home.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>WELCOME!</h1>
+        <p>Please register your pet below. To view all registered pets, click view pets button below.</p>
+
+        <form id="petForm" action="">
+            <div>
+                <label for="petName">Pet Name:</label>
+                <input type="text" name="petName" id="petName">
+            </div>
+            <div>
+                <label for="petAnimal">Animal:</label>
+                <input type="text" name="petAnimal" id="petAnimal">
+            </div>
+            <div>
+                <label for="petBreed">Breed:</label>
+                <input type="text" id="petBreed" name="petBreed">
+            </div>
+            <div>
+                <label for="petAge">Age:</label>
+                <input type="number" id="petAge" name="petAge">
+            </div>
+            <div>
+                <label for="petColor">Color:</label>
+                <input type="text" id="petColor" name="petColor">
+            </div>
+            <div>
+                <input type="submit" value="Register pet">
+            </div>
+            
+        </form>
+        <br>
+        <div id="regComplete"></div>
+
+        <div>
+            <button id="viewPets"><a href="/resgistered-pets">View registered pets</a></button>
+        </div>
+    </div>
+</body>
+</html>
